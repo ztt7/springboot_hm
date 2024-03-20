@@ -1,0 +1,13 @@
+server:
+  port: 81
+
+country: china
+
+subject:
+  - Java
+  - 前端
+  - 大数据
+
+enterprise:
+  name: itcast
+  age: 16

@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="web" />
         <module name="springboot_04_junit" />
         <module name="springboot_05_mybatis" />
         <module name="springboot_01_01_quickstart" />
@@ -13,7 +14,6 @@
         <module name="springboot_08_ssmp" />
         <module name="springboot_02_base_configration" />
         <module name="springboot_06_mybatis_plus" />
-        <module name="springboot_hm" />
       </profile>
     </annotationProcessing>
   </component>

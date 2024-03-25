@@ -1,0 +1,12 @@
+#spring:
+#  profiles:
+#    active: dev
+#    include: devDB,devRedis,devMVC
+
+# spring 2.4之后的版本，把include干掉了，使用group属性
+spring:
+  profiles:
+    active: dev
+    group:
+      "dev": devDB,devMVC
+      "pro": proDB,proMVC

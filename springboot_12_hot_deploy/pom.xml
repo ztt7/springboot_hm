@@ -49,6 +49,7 @@
 			<artifactId>lombok</artifactId>
 		</dependency>
 
+<!--		启动热部署的工具-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>

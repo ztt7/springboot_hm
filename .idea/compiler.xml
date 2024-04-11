@@ -12,6 +12,7 @@
         <module name="springboot_01_01_quickstart" />
         <module name="springboot_00" />
         <module name="springboot_13_configuration" />
+        <module name="springboot_14_test" />
         <module name="springboot_08_ssmp" />
         <module name="springboot_02_base_configration" />
         <module name="springboot_06_mybatis_plus" />
@@ -32,6 +33,7 @@
       <module name="springboot_10_properties1" options="-parameters" />
       <module name="springboot_12_hot_deploy" options="-parameters" />
       <module name="springboot_13_configuration" options="-parameters" />
+      <module name="springboot_14_test" options="-parameters" />
     </option>
   </component>
 </project>

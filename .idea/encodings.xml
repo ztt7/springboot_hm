@@ -20,6 +20,11 @@
     <file url="file://$PROJECT_DIR$/springboot_13_configuration/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot_14_test/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot_14_test/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot_15_sql/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot_15_sql/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot_16_redis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot_17_mongodb/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot_19_cache/src/main/java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

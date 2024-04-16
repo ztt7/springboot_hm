@@ -1,0 +1,29 @@
+server:
+  port: 80
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/ssm_db
+      username: root
+      password: 12345678
+  cache:
+    type: redis
+  redis:
+    host: localhost
+    port: 6379
+# ehcache
+#  cache:
+#    type: ehcache
+#    ehcache:
+#      config: classpath:ehcache.xml
+
+
+
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix: tbl_
+      id-type: auto
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

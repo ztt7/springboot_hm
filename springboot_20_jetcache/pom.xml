@@ -8,8 +8,8 @@
         <version>2.5.4</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.itheima</groupId>
-    <artifactId>springboot_19_cache</artifactId>
+    <groupId>com.example</groupId>
+    <artifactId>springboot_20_jetcache</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <properties>
@@ -20,6 +20,13 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -47,29 +54,11 @@
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-cache</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>net.sf.ehcache</groupId>
-            <artifactId>ehcache</artifactId>
-        </dependency>
 
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.googlecode.xmemcached</groupId>
-            <artifactId>xmemcached</artifactId>
-            <version>2.4.7</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <groupId>com.alicp.jetcache</groupId>
+            <artifactId>jetcache-starter-redis</artifactId>
+            <version>2.6.2</version>
         </dependency>
     </dependencies>
 
@@ -78,14 +67,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
-                </configuration>
             </plugin>
         </plugins>
     </build>

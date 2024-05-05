@@ -10,6 +10,9 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>web</module>
+        <module>springboot_27_bean_init</module>
+        <module>springboot_28_bean_load</module>
+        <module>springboot_29_bean_properties</module>
     </modules>
 
     <properties>

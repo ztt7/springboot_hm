@@ -7,10 +7,10 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.itheima.dao.BookDao;
 import com.itheima.domain.Book;
 import com.itheima.service.IBookService;
-import org.apache.ibatis.annotations.Insert;
+import io.micrometer.core.instrument.Counter;
+import io.micrometer.core.instrument.MeterRegistry;
 import org.apache.logging.log4j.util.Strings;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -29,8 +29,15 @@ public class BookServiceImpl extends ServiceImpl<BookDao, Book> implements IBook
         return bookDao.updateById(book) >0;
     }
 
+    private Counter counter;
+
+    public BookServiceImpl(MeterRegistry meterRegistry){
+        counter = meterRegistry.counter("用户付费操作次数：");
+    }
     @Override
     public boolean delete(Integer id) {
+        //每次执行删除业务等同于执行了付费业务
+        counter.increment();
         return bookDao.deleteById(id) > 0;
     }
 
